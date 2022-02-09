@@ -61,7 +61,7 @@ def detect_sign(month: int, day: int) -> str:
             sign = "sagittaire"
     if month == 12:
         if 0 <= day <= 22:
-            sign = "saggitaire"
+            sign = "sagittaire"
         else:
             sign = "capricorne"
     return sign
