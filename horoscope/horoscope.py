@@ -5,65 +5,29 @@ import unidecode
 def detect_sign(month: int, day: int) -> str:
     sign = ""
     if month == 1:
-        if 0 <= day <= 20:
-            sign = "capricorne"
-        else:
-            sign = "verseau"
+        sign = "capricorne" if 0 <= day <= 20 else "verseau"
     if month == 2:
-        if 0 <= day <= 19:
-            sign = "verseau"
-        else:
-            sign = "poissons"
+        sign = "verseau" if 0 <= day <= 19 else "poissons"
     if month == 3:
-        if 0 <= day <= 20:
-            sign = "poissons"
-        else:
-            sign = "belier"
+        sign = "poissons" if 0 <= day <= 20 else "belier"
     if month == 4:
-        if 0 <= day <= 19:
-            sign = "belier"
-        else:
-            sign = "taureau"
+        sign = "belier" if 0 <= day <= 19 else "taureau"
     if month == 5:
-        if 0 <= day <= 20:
-            sign = "taureau"
-        else:
-            sign = "gemeaux"
+        sign = "taureau" if 0 <= day <= 20 else "gemeaux"
     if month == 6:
-        if 0 <= day <= 21:
-            sign = "gemeaux"
-        else:
-            sign = "cancer"
+        sign = "gemeaux" if 0 <= day <= 21 else "cancer"
     if month == 7:
-        if 0 <= day <= 22:
-            sign = "cancer"
-        else:
-            sign = "lion"
+        sign = "cancer" if 0 <= day <= 22 else "lion"
     if month == 8:
-        if 0 <= day <= 22:
-            sign = "lion"
-        else:
-            sign = "vierge"
+        sign = "lion" if 0 <= day <= 22 else "vierge"
     if month == 9:
-        if 0 <= day <= 22:
-            sign = "vierge"
-        else:
-            sign = "balance"
+        sign = "vierge" if 0 <= day <= 22 else "balance"
     if month == 10:
-        if 0 <= day <= 23:
-            sign = "balance"
-        else:
-            sign = "scorpion"
+        sign = "balance" if 0 <= day <= 23 else "scorpion"
     if month == 11:
-        if 0 <= day <= 22:
-            sign = "scorpion"
-        else:
-            sign = "sagittaire"
+        sign = "scorpion" if 0 <= day <= 22 else "sagittaire"
     if month == 12:
-        if 0 <= day <= 22:
-            sign = "sagittaire"
-        else:
-            sign = "capricorne"
+        sign = "sagittaire" if 0 <= day <= 22 else "capricorne"
     return sign
 
 def horoscope(sign: str) -> str:
